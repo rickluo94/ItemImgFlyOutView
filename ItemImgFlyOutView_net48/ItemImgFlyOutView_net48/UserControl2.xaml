@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="ItemImgFlyOutView_net48.UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ItemImgFlyOutView_net48"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="FlyOutItemID_Str" Text="物料編號:" Margin="20" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Height="auto">
+                <Border BorderThickness="1" BorderBrush="White">
+                    <Image x:Name="ImageShow" HorizontalAlignment="Left" Margin="10,0,0,0" MaxHeight="500" MaxWidth="500"/>
+                </Border>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="auto">
+                    <Border BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="Item_Image1" Width="50" Height="50" Margin="5" MouseLeftButtonDown="Item_Image_MouseLeftButtonDown"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="Item_Image2" Width="50" Height="50" Margin="5" MouseLeftButtonDown="Item_Image_MouseLeftButtonDown"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="Item_Image3" Width="50" Height="50" Margin="5" MouseLeftButtonDown="Item_Image_MouseLeftButtonDown"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="Item_Image4" Width="50" Height="50" Margin="5" MouseLeftButtonDown="Item_Image_MouseLeftButtonDown"/>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="Item_Image5" Width="50" Height="50" Margin="5" MouseLeftButtonDown="Item_Image_MouseLeftButtonDown"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10">
+                    <Button x:Name="AddNewImg_Btn"  Content="新增圖片"  Margin="5" Click="AddNewImg_Btn_Click"/>
+                    <Button x:Name="ClearSelectedImg_Btn" Content="清除圖片" Margin="5" Click="ClearSelectedImg_Btn_Click"/>
+                    <Button x:Name="ClearAllImg_Btn" Content="清除所有圖片" Margin="5" Click="ClearAllImg_Btn_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
